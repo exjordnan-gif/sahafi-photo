@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahafi Photography | Galka Sawirada</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        :root {
+            --primary-color: #100d0d;
+            --secondary-color: #f89a16;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        * { margin: 0; 
+            padding: 0;
+             box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; 
+        color: var(--text-color);
+         background-color: var(--light-bg); }
+        .site-container { display: flex; 
+            flex-direction: column;
+             min-height: 100vh; }
+        
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-size: 1.8rem; 
+            font-weight: bold; 
+            color: var(--white); 
+            text-transform: uppercase;
+             margin-right:270px ; }
+        .logo span { color: var(--secondary-color);
+                    font-weight: bolder;
+            
+        }
+        nav { display: flex;
+             gap: 20px; }
+        nav a { color: var(--white); 
+            text-decoration: none; 
+            font-size: 10px; 
+            padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--secondary-color); }
+
+        main { flex: 1; 
+            padding: 40px 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            width: 100%; }
+        h2 { margin-bottom: 20px; 
+            color: var(--primary-color); 
+            border-bottom: 2px solid var(--secondary-color); 
+            padding-bottom: 5px; }
+        footer { background-color: var(--primary-color); 
+            color: #888; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: auto; }
+
+        /* Gallery Grid */
+        .gallery-grid { display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+            margin-bottom: 40px; }
+        .gallery-item { flex: 1 1 calc(33.333% - 20px); 
+            min-width: 250px; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            transition: transform 0.3s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; 
+            height: 250px; object-fit: cover; 
+            display: block; }
+        
+        /* Table */
+        .data-table { width: 100%; 
+            border-collapse: collapse;
+             margin-top: 20px;
+              background-color: var(--white); 
+              box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .data-table th, .data-table td { padding: 12px 15px; 
+            text-align: left; 
+            border-bottom: 1px solid #ddd; }
+        .data-table thead tr { background-color: var(--primary-color); 
+            color: var(--secondary-color); }
+        .data-table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+        .data-table tbody tr:hover { background-color: #f1ebd9; }
+        .data-table a { color: var(--primary-color); 
+            font-weight: bold; }
+             img{
+            height: 70px;
+            width: 70px;
+           
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="site-container">
+        <header>
+             <img src="logo.jpeg" alt="">
+            <div class="logo">SAHAFI<span>PHOTOGRAPHY</span></div>
+            <nav>
+                <a href="hoyga.html" class="active">HOYGA</a>
+                <a href="sawirada.html">SAWIRADA</a>
+                <a href="dalabka.html">DALABKA</a>
+                <a href="caawinaad.html">CAAWINAAD</a>
+                <a href="nagu saabsan.html">NAGU SAABSAN</a>
+            </nav>
+        </header>
+        <main>
+            <h2>SAWIRADA AAN DIYARINO</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="arooska.jpg" alt="Sawirka Aroos"></div>
+                <div class="gallery-item"><img src="hall.jpg" alt="Sawirka Qalinjabin"></div>
+                <div class="gallery-item"><img src="beach.jpg" alt="Sawirka Dabeecada"></div>
+                <div class="gallery-item"><img src="halimo.jpg" alt="Sawirka Aroos"></div>
+                <div class="gallery-item"><img src="gabar.jpg" alt="Sawirka Qalinjabin"></div>
+                <div class="gallery-item"><img src="graduation.jpeg" alt="Sawirka Dabeecada"></div>
+                <div class="gallery-item"><img src="geel.jpg" alt="Sawirka Aroos"></div>
+                <div class="gallery-item"><img src="xeebta.jpg" alt="Sawirka Qalinjabin"></div>
+                <div class="gallery-item"><img src="ciyaal.jpg" alt="Sawirka Dabeecada"></div>
+            </div>
+            <h2>QIIMAHA ADEEGYADENA</h2>
+            <table class="data-table">
+                <thead>
+                    <tr><th>NOOCA ADEEGA</th><th>TIRADA</th><th>QIIMAHA ($)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>SAWIRADA AROOSKA </td><td>100 SAWIR IYO MUQAL +ALBUM</td><td>$300</td></tr>
+                    <tr><td>SAWIRADA QALIN-JEBINTA</td><td>50 SAWIR IYO MUQAL</td><td>$150</td></tr>
+                    <tr><td>SAWIRADA DALXIISKA</td><td>400 SAWIR IYO MUQAL</td><td>$400</td></tr>
+                    <tr><td>SAWIRADA MUNASABADAHA GAARKA AH</td><td>100 SAWIR IYO MUQAL</td><td>$500</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="2">Wixii faahfaahin ah</td><td><a href="caawinaad.html" target="_blank">Halkan Guji</a></td></tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer><p>&copy; 2026 Sahafi Photography. Dhamaan xuquuqda waa dhowran tahay.</p></footer>
+    </div>
+</body>
+</html>

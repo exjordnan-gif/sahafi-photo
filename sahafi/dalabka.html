@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahafi Photography | Ballansashada</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        :root {
+            --primary-color: #0d0b0b;
+            --secondary-color: #f5950e;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; 
+            color: var(--text-color); 
+            background-color: var(--light-bg); }
+        .site-container { display: flex; 
+            flex-direction: column;
+             min-height: 100vh; }
+        
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-size: 1.8rem; 
+            font-weight: bold; 
+            color: var(--white); 
+            text-transform: uppercase; 
+            margin-right: 270px;
+        }
+        .logo span { color: var(--secondary-color); 
+                    font-weight: bolder;
+        
+        }
+        nav { display: flex; 
+            gap: 20px; }
+        nav a { color: var(--white); 
+            text-decoration: none; 
+            font-size: 10px; 
+            padding: 5px 10px; }
+        nav a:hover, nav a.active { color: var(--secondary-color); }
+
+        main { flex: 1; padding: 40px 20px; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            width: 100%; }
+        fieldset { border: 2px solid var(--secondary-color); 
+            border-radius: 8px; 
+            padding: 25px; 
+            background-color: var(--white); }
+        legend { font-weight: bold; 
+            padding: 0 15px; 
+            color: var(--primary-color); 
+            font-size: 1.2rem; }
+        .form-group { display: flex; 
+            flex-direction: column; 
+            margin-bottom: 20px; }
+        .form-group label { margin-bottom: 8px; 
+            font-weight: 600; }
+        .form-group input[type="text"], .form-group select, .form-group textarea { padding: 12px; border: 1px solid #ccc; border-radius: 4px; }
+        .form-row-inline { display: flex; 
+            gap: 20px; }
+        .btn-submit { background-color: var(--primary-color); 
+            color: var(--secondary-color); 
+            padding: 12px 25px; border: none; 
+            border-radius: 4px; cursor: pointer; 
+            font-weight: bold; }
+        .btn-submit:hover { background-color: var(--secondary-color); 
+            color: var(--primary-color); }
+        footer { background-color: var(--primary-color); 
+            color: #888; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: auto; }
+        #reset{
+            margin-left: 290px;
+        }
+        input{
+            padding: 10px;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+           
+
+        }
+   </style>
+</head>
+<body>
+    <div class="site-container">
+        <header>
+            <img src="logo.jpeg" alt="">
+            <div class="logo">SAHAFI<span>PHOTOGRAPHY</span></div>
+            <nav>
+                <a href="hoyga.html" class="active">HOYGA</a>
+                <a href="sawirada.html">SAWIRADA</a>
+                <a href="dalabka.html">DALABKA</a>
+                <a href="caawinaad.html">CAAWINAAD</a>
+                <a href="nagu saabsan.html">NAGU SAABSAN</a>
+            </nav>
+        </header>
+        <main>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>SI AAD U DALBATO BUUXI FORM-KAAN</legend>
+                    <div class="form-group">
+                        <label for="fullname">Magacaaga:</label>
+                        <input type="text" id="fullname" placeholder="Geli magacaaga..." required>
+                        <br>
+                        <label for="fullname">Magacaga waalidkaga:</label>
+                        <input type="text" id="fullname" placeholder="Geli magaca waalidka..." required>
+                        <br>
+                        <label for="mobile no">mobile  numberkaaga:</label>
+                        <input type="tel" id="mobile no" placeholder="geli numberkaga" required>
+                        <br>
+                        <label for="email">Email kaaga:</label>
+                        <input type="email" id="email" placeholder="geli gmailkaga" required>
+                        <br><br>
+                        <label>taariikhda aad rabto:</label>
+                        <input type="date" required>
+                        <br><br>
+                        <label>saacadda aad rabto:</label>
+                        <input type="time" required>
+                        
+
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="major">Goobta aad joogto:</label>
+                        <select id="major">
+                            <option value="it">MOGADISHO</option>
+                            <option value="it">HARGEYSA</option>
+                            <option value="it">KISMAYO</option>
+                            <option value="it">JIGJIGA</option>
+                            <option value="it">DHUUSOMAREEB</option>
+                            <option value="it">OTHERS</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Lab ama Dhedig:</label>
+                        <div class="form-row-inline">
+                            <label><input type="radio" name="gender" required> Lab</label>
+                            <label><input type="radio" name="gender"> Dhedig</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nooca Sawirada:</label>
+                        <div class="form-row-inline">
+                            <label><input type="checkbox"> Aroosk</label>
+                            <label><input type="checkbox"> qalin-jebin</label>
+                            <label><input type="checkbox"> Dalxiis</label>
+                            <label><input type="checkbox"> Munasabadaha garka ah</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Faallo:</label>
+                        <textarea id="comments" rows="4" placeholder="Qor fariintaada..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">DIR DALABKA</button>
+                    <button type="reset" class="btn-submit" id="reset">DIB UGA NOQO</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer><p>&copy; 2026 Sahafi Photography. Dhamaan xuquuqda waa dhowran tahay.</p></footer>
+    </div>
+</body>
+</html>

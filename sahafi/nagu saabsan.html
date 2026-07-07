@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahafi Photography | Nagu Saabsan</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        /* Midabadaadii rasmiga ahaa */
+        :root {
+            --primary-color: #070707;
+            --secondary-color: #f59207;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: var(--text-color); 
+            background-color: var(--light-bg); 
+            line-height: 1.6;
+        }
+        
+        .site-container { 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        
+        /* --- HEADER-KA FLEXBOX (SIDA SAWIRKAADNA) --- */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { 
+            font-size: 1.8rem; 
+            font-weight: bold; 
+            color: var(--white); 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            margin-right: 270px;
+        }
+        .logo span { 
+            color: var(--secondary-color); 
+            font-weight: bolder;
+        }
+        nav { 
+            display: flex; 
+            gap: 20px; 
+        }
+        nav a { 
+            color: var(--white); 
+            text-decoration: none; 
+            font-size: 10px; 
+            font-weight: 500; 
+            padding: 5px 10px;
+            transition: color 0.3s; 
+        }
+        nav a:hover, nav a.active { 
+            color: var(--secondary-color); 
+        }
+
+        /* Qaybta Dhexe ee Content-ka */
+        main { 
+            flex: 1; 
+            padding: 60px 20px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            width: 100%; 
+        }
+        
+        /* --- NAQSHADDA CUSUB EE PROFILE CARD --- */
+        .about-wrapper {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border-top: 6px solid var(--secondary-color);
+            display: flex; /* Flexbox si sawirka iyo qoraalku isku garab istaagaan */
+            flex-wrap: wrap; /* Si uu talefanka ugu laabmo */
+        }
+
+        /* Qaybta Sawirka Sameeyaha */
+        .creator-image-area {
+            flex: 1 1 350px;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .creator-image-area img {
+            width: 100%;
+            max-width: 300px;
+            height: 350px;
+            object-fit: cover; /* Si sawirku uusan u dhalanrogmin */
+            border-radius: 8px;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Qaybta Qoraalka Xogta */
+        .creator-info-area {
+            flex: 1 1 450px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .creator-info-area h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .creator-info-area .title {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .info-details {
+            margin-bottom: 25px;
+        }
+
+        .info-details p {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-details strong {
+            color: var(--primary-color);
+            min-width: 150px;
+        }
+
+        .bio-text {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer { 
+            background-color: var(--primary-color); 
+            color: #888; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: auto; 
+            font-size: 0.9rem;
+        }
+
+        /* Responsive la qabsiga talefanka */
+        @media (max-width: 768px) {
+            .creator-info-area {
+                padding: 30px 20px;
+            }
+            .creator-info-area h2 {
+                font-size: 1.8rem;
+            }
+        }
+        img{
+            height: 70px;
+            width: 70px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="site-container">
+        <!-- Qaybta Header-ka -->
+        <header>
+            <img src="logo.jpeg" alt="">
+            <div class="logo">SAHAFI<span>PHOTOGRAPHY</span></div>
+            <nav>
+                <a href="hoyga.html" class="active">HOYGA</a>
+                <a href="sawirada.html">SAWIRADA</a>
+                <a href="dalabka.html">DALABKA</a>
+                <a href="caawinaad.html">CAAWINAAD</a>
+                <a href="nagu saabsan.html">NAGU SAABSAN</a>
+            </nav>
+        </header>
+
+        <!-- Qaybta weyn ee profile-ka cusub -->
+        <main>
+            <div class="about-wrapper">
+                
+                <!-- BIDIX: Meesha sawirka laga soo gelinayo -->
+                <!-- FIIRO GAAR AH: Bedel "images/yaasir.jpg" oo geli magaca sawirkaaga saxda ah -->
+                <div class="creator-image-area">
+                    <img src="asad.jpeg" alt="Yaasir Abdirshid Hussein">
+                </div>
+
+                <!-- MIDIG: Xogta iyo Taariikhda Sameeyaha -->
+                <div class="creator-info-area">
+                    <h2>MOHAMED SAYIDALI</h2>
+                    <div class="title">Web Developer & Designer</div>
+                    
+                    <div class="info-details">
+                        <p><strong>Magaca Buuxa:</strong> mohamed sayid ali</p>
+                        <p><strong>Jaamacadda:</strong> Jamhuriya University (JUST)</p>
+                        <p><strong>Kulliyadda:</strong> Computer & IT</p>
+                        <p><strong>Doorka Mashruuca:</strong> Full Website Creator</p>
+                    </div>
+
+                    <div class="bio-text">
+                        <p>Ku soo dhawaada boggayga gaarka ah. Waxaan ahay sameeyaha iyo naqshadeeyaha kaligii dhisay website-ka Sahafi Photography. Mashruucan waxaan u qaabeeyey si casri ah anigoo adeegsanaya xirfadahayga HTML iyo CSS si aan u daboolo baahiyaha macaamiisha doonaysa adeegyo sawir-qaadis oo heer sare ah.</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Qaybta Footer-ka -->
+        <footer>
+            <p>&copy; 2026 Sahafi Photography. Dhamaan xuquuqda waa dhowran tahay.</p>
+        </footer>
+    </div>
+</body>
+</html>

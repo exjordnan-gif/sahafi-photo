@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahafi Photography | Hoyga</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        /* Midabadaadii rasmiga ahaa */
+        :root {
+            --primary-color: #0a0808;
+            --secondary-color: #fb9b14;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        .site-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER-KA SIDA SAWIRKA GAARKA AH EE FLEXBOX --- */
+        header {
+            
+            background-color: var(--primary-color);
+            padding: 20px 5%;
+            display: flex;             /* Flexbox Layout */
+            justify-content: space-between; /* Magaca bidix, Menu-ka midig */
+            align-items: center;       /* Dhanka dhexda ayay wada xariirayaan */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: 270px;
+        }
+        .logo span {
+            color: var(--secondary-color);
+            font-weight: bolder;                                         /* Qaybta midabka dahabiga ah */
+        }
+        nav {
+            display: flex;             /* Qaybta menu-ka oo xariir ah */
+            gap: 20px;                 /* Masaafada u dhaxaysa links-ka */
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size:10px;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+        }
+        nav a:hover, nav a.active {
+            color: var(--secondary-color); /* Markii la dul istaago */
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .para{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('photo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 1px solid var(--secondary-color);
+            margin-bottom: 40px;
+        }
+        .hero h2 {
+            font-size: 2.7rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-weight: bolder;
+            color: gold;
+        }
+
+        /* 3-da Flexbox Cards */
+        .services-flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-card {
+            flex: 1 1 calc(33.333% - 20px);
+            min-width: 280px;
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary-color);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="site-container">
+        <!-- Header-kii oo loo naqshadeeyay sidii sawirkaaga -->
+        <header>
+            <img src="logo.jpeg" alt="">
+            <div class="logo">SAHAFI<span>PHOTOGRAPHY</span></div>
+            <nav>
+                <a href="index.html" class="active">HOYGA</a>
+                <a href="sawirada.html">SAWIRADA</a>
+                <a href="dalabka.html">DALABKA</a>
+                <a href="caawinaad.html">CAAWINAAD</a>
+                <a href="nagu saabsan.html">NAGU SAABSAN</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>KU SOO DHAWOW SAHAFI </h2>
+                <p class="para">"Waxaan kuu qabanaynaa sawirada xafladaha, aroosyada, iyo munaasabadaha qaaska ah anagoo adeegsanayna qalabka ugu casrisan dalalka caalamka".</p>
+            </section>
+
+            <section class="services-flex-container">
+                <div class="service-card">
+                    <h3>📷 Sawirada Arooska</h3>
+                    <p>Waxaan  maalintaada kugu qurxineyna qalab tayo sare leh sido kale  waxan ku diyarineyna muqaalo aadku cajab galiya.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎓 Qalinjabinta</h3>
+                    <p>Hambalyo maalinkaga qalinjebinta! Waxaan kuu diyaarinaynaa sawirada qalinjabinta kuwooda ugu tayada fiican.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🏖️ DALXIIS</h3>
+                    <p>Ma u baahan tahay sawirro dalxiis waxan diyaar kuula nahay muqaalo iyo sawiro tayo sare leh .</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sahafi Photography. Dhamaan xuquuqda waa dhowran tahay.</p>
+        </footer>
+    </div>
+</body>
+</html>

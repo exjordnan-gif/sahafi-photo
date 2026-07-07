@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahafi Photography | Caawinaad</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        /* Midabadaada rasmiga ah (Madow, Dahab, Cadaan) */
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f6940c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: var(--text-color); 
+            background-color: var(--light-bg); 
+            line-height: 1.6;
+        }
+        
+        .site-container { 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        
+        /* --- HEADER-KA FLEXBOX SIDA SAWIRKAADNA (MAGACA BIDIX, NAV MIDIG) --- */
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { 
+            font-size: 1.8rem; 
+            font-weight: bold; 
+            color: var(--white); 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            margin-right: 270px;
+        }
+        .logo span { 
+            color: var(--secondary-color); 
+            font-weight: bolder;
+        }
+        nav { 
+            display: flex; 
+            gap: 20px; 
+        }
+        nav a { 
+            color: var(--white); 
+            text-decoration: none; 
+            font-size: 10px; 
+            font-weight: 500; 
+            padding: 5px 10px;
+            transition: color 0.3s; 
+        }
+        nav a:hover, nav a.active { 
+            color: var(--secondary-color); 
+        }
+
+        /* Qaybta Macluumaadka Dhexe */
+        main { 
+            flex: 1; 
+            padding: 40px 20px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            width: 100%; 
+        }
+        
+        h1 { 
+            margin-bottom: 30px; 
+            color: var(--primary-color); 
+            border-bottom: 3px solid var(--secondary-color); 
+            padding-bottom: 10px;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 25px 0 15px 0;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        /* Naqshadda Qaybaha Caawinaada (Cards) */
+        .help-section {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .help-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .help-section li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #eee;
+        }
+
+        .help-section strong {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer { 
+            background-color: var(--primary-color); 
+            color: #888; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: auto; 
+            font-size: 0.9rem;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="site-container">
+        <!-- Qaybta Header-ka (Nav-ka) -->
+        <header>
+            <img src="logo.jpeg" alt="">
+            <div class="logo">SAHAFI<span>PHOTOGRAPHY</span></div>
+            <nav>
+                <a href="hoyga.html" class="active">HOYGA</a>
+                <a href="sawirada.html">SAWIRADA</a>
+                <a href="dalabka.html">DALABKA</a>
+                <a href="caawinaad.html">CAAWINAAD</a>
+                <a href="nagu saabsan.html">NAGU SAABSAN</a>
+            </nav>
+        </header>
+
+        <!-- Qaybta Warbixinta Caawinaada -->
+        <main>
+            <h1>HAGAHA IYO CAAWINAADA ISTICMAALKA WEBSITE-KA</h1>
+            <p>Ku soo dhawaada qaybta caawinaada ee Sahafi Photography. Boggan waxaa loogu talagalay in lagu siiyo faahfaahin buuxda iyo hage tillaabo-tillaabo ah oo ku saabsan sida loo dhexmaro websaydhka, sida loo isticmaalo foomamka, iyo sida loo eego adeegyada kala duwan ee aan bixino.</p>
+
+            <!-- Qaybta 1 -->
+            <div class="help-section">
+                <h2>1. Sida Loo Isticmaalo Menu-ka Sare (Dhexmarka Bogagga)</h2>
+                <p>Website-ka waxaa loo dhisay hab casri ah oo adeegsanaya bar-ta sare (Header) ee madow iyo dahabka ah. Tani waxay kuu sahlaysaa inaad si dhib yar ugu kala gudubto qaybaha kala duwan ee bogga adigoo gujinaya xiriiriyeyaasha (Links):</p>
+                <ul>
+                    <li><strong>Hoyga (Home):</strong> Waa boggii koowaad ee hordhaca websaydhka. Waxaad ka helaysaa aragtida guud ee shirkadda iyo saddex sanduuq oo kooban (Cards) oo si degdeg ah kuu tusaya adeegyada ugu muhiimsan ee aan qabano.</li>
+                    <li><strong>Galka Sawirada (Gallery):</strong> Boggan wuxuu kuu oggolaanayaa inaad aragto muunado ka mid ah shaqooyinkii ugu dambeeyey ee aan macaamiisha u qabanay, sida sawirada aroosyada iyo xafladaha. Sidoo kale, waxaa ku dhex jirta shaxda rasmiga ah ee qiimaha.</li>
+                    <li><strong>Ballansashada (Booking):</strong> Waa qaybta foomka laga buuxiyo haddii aad rabto inaad boos ka qabsato istuudiyaha ama aad dalbato sawir-qaade.</li>
+                    <li><strong>Caawinaad (Help):</strong> Waa boggan aad hadda akhrinayso, kaas oo kuu sharaxaya nidaamka uu website-ku u shaqeeyo.</li>
+                    <li><strong>Nagu Saabsan (About):</strong> Boggan waxaad ka helaysaa xogta maamulaha iyo qofka iska leh mashruucan, oo ay ku jiraan magaca ardayga iyo jaamacadda.</li>
+                </ul>
+            </div>
+
+            <!-- Qaybta 2 -->
+            <div class="help-section">
+                <h2>2. Sida loo dhexmaro Galka Sawirada iyo Shaxda Qiimaha</h2>
+                <p>Markaad booqato bogga "Galka Sawirada", waxaad la kulmi doontaa naqshad casri ah oo sawirada iyo qiimaha u soo bandhigta qaab fudud:</p>
+                <ul>
+                    <li><strong>Eegista Sawirada:</strong> Sawirada waxaa lagu habeeyey nidaamka Flexbox/Grid. Markaad mouse-ka dul dhigto sawir kasta, wuxuu samaynayaa dhaqdhaqaaq yar (Zoom in) si uu kuu siiyo aragti aad u cad.</li>
+                    <li><strong>Akhriska Shaxda Qiimaha:</strong> Shaxda (Table) waxay si cad wada jebisaa noocyada adeegga, tirada sawirada aad helayso, iyo qiimaha doolarka ah. Si akhrisku kuugu fududaado, saf kasta oo shaxda ka mid ah wuxuu isku beddelayaa midabka dahabiga ah marka aad mouse-ka ku dul hayso.</li>
+                    <li><strong>Xiriiriyeyaasha Dibadda:</strong> Qaybta hoose ee shaxda waxaa ku jira link si gaar ah kuugu kaxaynaya matoorada raadinta (sida Google) si aad u hesho macluumaad dheeri ah haddii aad u baahato.</li>
+                </ul>
+            </div>
+
+            <!-- Qaybta 3 -->
+            <div class="help-section">
+                <h2>3. Hagaha Saxda ah ee Buuxinta Foomka Ballansashada</h2>
+                <p>Bogga "Ballansashada" wuxuu leeyahay foom casri ah oo ururiya xogtaada si aan kuugu qabsano boos firaaqo ah. Si dalabkaagu u noqdo mid guuleysta, fadlan u buuxi qaybaha foomka habkan:</p>
+                <ul>
+                    <li><strong>Magaca oo Buuxa:</strong> Sanduuqan waa qasab (Required). Haddii aad ka tagto adigoon waxba ku qorin, foomka ma aadi doono nidaamkuna wuxuu ku weydiin doonaa inaad magacaaga geliso.</li>
+                    <li><strong>Kulliyadaada:</strong> Waa liis hoos u dhacaya (Select Dropdown) oo aad ka dooranayso qaybta aad ka tirsan tay si aan u ogaano hannaanka qalinjabintaada.</li>
+                    <li><strong>Lab ama Dhedig:</strong> Waa badamo wareeg ah (Radio Buttons). Waxaad dooran kartaa hal xiriir oo kaliya (wiil ama gabadh).</li>
+                    <li><strong>Nooca Sawirada:</strong> Waa sanduuqyo calaamadayn ah (Checkboxes). Halkan waxaad xor u tahay inaad hal adeeg doorato, dhowr adeeg wada calaamadayso, ama aad dhammaantood wada doorato.</li>
+                    <li><strong>Faallo Dheeri ah:</strong> Qaybta weyn ee fariinta (Textarea) waxaad ku qori kartaa taariikhda aad rabto in laguu sawiro iyo fariimaha gaarka ah ee aad qabto.</li>
+                    <li><strong>Guleyso Dalabka:</strong> Markaad dhammaan qaybaha kore buuxiso, guji badanka hoose si dalabkaaga si rasmi ah loogu gudbiyo.</li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- Qaybta Footer-ka -->
+        <footer>
+            <p>&copy; 2026 Sahafi Photography. Dhamaan xuquuqda waa dhowran tahay.</p>
+        </footer>
+    </div>
+</body>
+</html>
